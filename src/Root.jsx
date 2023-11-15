@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import YowIam from './components/YowIam'
-import CanDo from './components/Cando'
+import CanDo from './components/CanDo'
 import Projects from './components/projects'
 import Footer from './components/footer'
 
