@@ -3,17 +3,18 @@ import React from 'react'
 export default function CanDo() {
   return (
     <>
+    <section>
         <div id="CanDo" className="flex justify-center w-[100%] h-[100vh] bg-darkgray">
           <div class="flex flex-col w-[55%] ">
               <h2 className='text-red font-bold text-[40px] mt-10'>I CAN</h2>
-              <div class="w-[100%] h-[750px] overflow-y-auto pr-10">
+              <div class="w-[100%] h-[750px] overflow-y-auto pr-10 pl-10">
                     <div class="flex  bg-backgray p-5 mt-5  hover-rotate"> 
                         
                         <div class="flex justify-center items-center w-[25%] h-[100%]">
                           <img src="/images/DevLogo.png" alt="" className='w-[50%] h-[50%]'/>
                         </div>
                         <div class="flex flex-col w-[80%]">
-                            <div class="font-bold text-gray-400  text-[25px]">BACK END</div>
+                            <div class="font-bold text-gray-400  text-[25px]"><span>BACK END</span></div>
                             <p className='text-white text-[18px]'> I excel in backend development. With a solid grasp of 
                                 server-side technologies and databases, I'm skilled at crafting efficient and reliable 
                                 software systems. Let's create exceptional digital experiences together!
@@ -26,7 +27,7 @@ export default function CanDo() {
                           <img src="/images/DesignLogo.png" alt="" className='w-[50%] h-[50%]'/>
                         </div>
                         <div class="flex flex-col w-[80%]">
-                            <div class="font-bold text-gray-400  text-[25px]">FRONT END</div>
+                            <div class="font-bold text-gray-400  text-[25px]"><span>FRONT END</span></div>
                             <p className='text-white text-[18px]'> I'm a full stack developer with a passion for 
                                     creating captivating user interfaces. Proficient in HTML, CSS, and JavaScript, 
                                     I love turning design concepts into seamless and interactive web experiences. 
@@ -41,7 +42,7 @@ export default function CanDo() {
                           <img src="/images/DatabaseLogo.png" alt="" className='w-[50%] h-[50%]'/>
                         </div>
                         <div class="flex flex-col w-[80%]">
-                            <div class="font-bold text-gray-400  text-[25px]">DATABASE MANAGEMENT</div>
+                            <div class="font-bold text-gray-400  text-[25px]"><span>DATABASE MANAGEMENT</span></div>
                             <p className='text-white text-[18px]'> I specialize in database management. With expertise in designing, 
                                     optimizing, and maintaining databases, I ensure seamless data organization 
                                     and retrieval. Let's harness the power of data to drive smarter decisions 
@@ -55,7 +56,7 @@ export default function CanDo() {
                           <img src="/images/GraphicLogo.png" alt="" className='w-[50%] h-[50%]'/>
                         </div>
                         <div class="flex flex-col w-[80%]">
-                            <div class="font-bold text-gray-400  text-[25px]">GRAPHIC DESIGNING</div>
+                            <div class="font-bold text-gray-400  text-[25px]"><span>GRAPHIC DESIGNING</span></div>
                             <p className='text-white text-[18px]'> a graphic designer with a flair for creativity and a strong command 
                                     of Adobe Photoshop. I love transforming ideas into stunning visuals, 
                                     whether it's designing logos, illustrations, or captivating graphics. 
@@ -70,7 +71,7 @@ export default function CanDo() {
                           <img src="/images/API-LOGO.png" alt="" className='w-[50%] h-[50%]'/>
                         </div>
                         <div class="flex flex-col w-[80%]">
-                            <div class="font-bold text-gray-400  text-[25px]">API INTEGRATION</div>
+                            <div class="font-bold text-gray-400  text-[25px]"><span>API INTEGRATION</span></div>
                             <p className='text-white text-[18px]'>I specialize in API integration. I have a knack for seamlessly connecting 
                                     applications and services, enabling smooth data exchange and enhanced 
                                     functionality. Whether it's integrating third-party APIs or building 
@@ -101,6 +102,7 @@ export default function CanDo() {
          
 
         </div>
+      </section>
     </>
   )
 }
