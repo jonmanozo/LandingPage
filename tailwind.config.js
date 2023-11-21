@@ -11,6 +11,12 @@ module.exports = {
         'backgray': ' rgb(38,38,38)',
         'darkgray': '#202020',
       },
+      zIndex: {
+        '1': '1',
+        '2': '2',
+        '5': '5',
+        '8': '8',
+      },
     },
   },
   plugins: [],

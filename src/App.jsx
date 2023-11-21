@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 
-
 import Root from './Root'
 //components
 import Navbar from './components/Navbar'

@@ -8,10 +8,10 @@ import Footer from './components/Footer'
 export default function Root() {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar/>
       <YowIam></YowIam>
-      <CanDo></CanDo>
       <Projects></Projects>
+      <CanDo></CanDo>
       <Footer></Footer>
     </>
   )
