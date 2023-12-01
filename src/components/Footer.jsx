@@ -8,7 +8,7 @@ export default function Footer() {
          <div id="Contact" className="flex justify-center w-[100%] h-[700px]">
                 <div className="flex justify-evenly  w-[90%] h-[500px] mt-20"> 
                   <div className="flex w-[40%] flex-col text-xl text-white">
-                    <span className='text-[35px] text-red font-extrabold mb-10 '>TALK TO ME</span>
+                    <span className='text-[35px] text-red font-extrabold mb-10 '>LET'S TALK</span>
                     <div className="">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime laborum 
                     eveniet maiores explicabo laboriosam qui, quibusdam delectus! Alias ea autem repellat delectus 
                     soluta illum, rerum incidunt voluptatibus exercitationem, nisi aut.</div>
