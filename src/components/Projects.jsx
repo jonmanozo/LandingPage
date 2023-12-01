@@ -49,8 +49,8 @@ export default function Projects() {
                 <motion.div 
                   className="flex w-[40%] h-[500px] rounded-xl bg-gray-500"
                   initial={{opacity: 0, scale: 0.5}}
-                  whileInView={{opacity: 1, scale: 1, x:10, y:10, rotate: 360}}
-                  whileHover={{rotate: 367}}
+                  whileInView={{opacity: 1, scale: 1, x:10, y:10}}
+                  whileHover={{rotate: 10}}
                   transition={{duration: 0.8}}
                 >
 
@@ -97,8 +97,8 @@ export default function Projects() {
                 <motion.div 
                   className="flex w-[40%] h-[500px] rounded-xl bg-gray-500"
                   initial={{opacity: 0, scale: 0.5}}
-                  whileInView={{opacity: 1, scale: 1, x:10, y:10, rotate: 360}}
-                  whileHover={{rotate: 367}}
+                  whileInView={{opacity: 1, scale: 1, x:10, y:10}}
+                  whileHover={{rotate: 10}}
                   transition={{duration: 0.8}}
                 >
 
@@ -118,8 +118,8 @@ export default function Projects() {
             <motion.div 
                   className="flex w-[40%] h-[500px] rounded-xl bg-gray-500"
                   initial={{opacity: 0, scale: 0.5}}
-                  whileInView={{opacity: 1, scale: 1, x:10, y:10, rotate: 360}}
-                  whileHover={{rotate: 367}}
+                  whileInView={{opacity: 1, scale: 1, x:10, y:10}}
+                  whileHover={{rotate: 10}}
                   transition={{duration: 0.8}}
                 >
 
