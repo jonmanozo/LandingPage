@@ -41,7 +41,7 @@ export default function YowIam() {
         <div id="Iam" className="flex justify-center w-[100%] h-[100vh]  bg-black mt-14">
         <div className="flex w-[80%]">
 
-            <motion.div className="flex mt-auto w-[45%] h-[100%] max-h-[1000px] min-w-[700px] z-1"><img src="/images/intro.png" alt="Image" /></motion.div>
+            <motion.div className="flex mt-auto w-[50%] h-[100%] max-h-[1000px] min-w-[700px] z-1"><img src="/images/intro.png" alt="Image" /></motion.div>
             <motion.div className="flex items-center w-[45%] text-white "
               variants={textVariant}
               initial="initial"
@@ -51,7 +51,7 @@ export default function YowIam() {
                     <motion.div class="text-[5vw] font-bold" variants={textVariant}><span>YOW!</span></motion.div>
                     <motion.div class="text-[5vw] font-bold -mt-6" variants={textVariant}>I AM  ALJON</motion.div>
                     <motion.div class="text-[5vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-red text-[4vw] animate-pulse -z-2'>FULL STACK</strong></motion.div>
-                    <motion.div class="text-[2vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-gray-500 text-[3vw] animate-pulse -z-2'>WEB DEVELOPER</strong></motion.div>
+                    <motion.div class="text-[2vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-gray-500 text-[2.2vw] animate-pulse -z-2'>/ FRONTEND DEVELOPER</strong></motion.div>
                 </motion.div>
             </motion.div>
             
