@@ -47,11 +47,11 @@ export default function YowIam() {
               initial="initial"
               animate="animate"
             >
-                <motion.div class="flex flex-col h-[400px] w-[100%] ml-20 -mt-40" variants={textVariant}>
-                    <motion.div class="text-[5vw] font-bold" variants={textVariant}><span>YOW!</span></motion.div>
-                    <motion.div class="text-[5vw] font-bold -mt-6" variants={textVariant}>I AM  ALJON</motion.div>
-                    <motion.div class="text-[5vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-red text-[4vw] animate-pulse -z-2'>FULL STACK</strong></motion.div>
-                    <motion.div class="text-[2vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-gray-500 text-[2.2vw] animate-pulse -z-2'>/ FRONTEND DEVELOPER</strong></motion.div>
+                <motion.div className="flex flex-col h-[400px] w-[100%] ml-20 -mt-40" variants={textVariant}>
+                    <motion.div className="text-[5vw] font-bold" variants={textVariant}><span>YOW!</span></motion.div>
+                    <motion.div className="text-[5vw] font-bold -mt-6" variants={textVariant}>I AM  ALJON</motion.div>
+                    <motion.div className="text-[5vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-red text-[4vw] animate-pulse -z-2'>FULL STACK</strong></motion.div>
+                    <motion.div className="text-[2vw] font-bold text-gray-500 -mt-6" variants={textVariant}><strong className='text-gray-500 text-[2.2vw] animate-pulse -z-2'>/ FRONTEND DEVELOPER</strong></motion.div>
                 </motion.div>
             </motion.div>
             

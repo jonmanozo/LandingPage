@@ -1,7 +1,26 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 
 export default function Footer() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_0ts5l2j', 'template_la3hhjv', form.current, 'iu_CXwVV7AzT83MBJ')
+      .then((result) => {
+          console.log(result.text);
+          console.log('Successfully Send');
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
+
   return (
     <>
      <section className='flex flex-col h-[700px] bg-black'>
@@ -79,23 +98,23 @@ export default function Footer() {
                   
                   <div className="flex flex-col w-[30%]">
                       <span className='text-[35px] text-red font-extrabold'></span>
-                      <form action="" className='mt-10'>
-                         <label for="input-label-with-helper-text" className="block text-md font-bold mb-2 dark:text-white">Full Name</label>
-                         <input type="text" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" />
+                      <form  ref={form} onSubmit={sendEmail} className='mt-10'>
+                         <label  className="block text-md font-bold mb-2 dark:text-white">Full Name</label>
+                         <input type="text"  name="from_name" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" />
                          
-                         <label for="input-label-with-helper-text" className="block text-md font-bold mb-2 dark:text-white mt-5">Email</label>
-                         <input type="email" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="you@site.com" aria-describedby="hs-input-helper-text" />
+                         <label  className="block text-md font-bold mb-2 dark:text-white mt-5">Email</label>
+                         <input type="email"  name="sender_email" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="you@site.com" aria-describedby="hs-input-helper-text" />
                          
-                         <label for="input-label-with-helper-text" className="block text-md font-bold dark:text-white  my-5">Message</label>
+                         <label  className="block text-md font-bold dark:text-white  my-5">Message</label>
                          <textarea
                                 id="message"
-                                name="Message"
+                                name="message"
                                 rows={3}
                                 className=" shadow-md p-2 pl-3 h-[150px] w-[100%] border-gray-300 bg-gray-100 rounded block border-0 py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 defaultValue={''}
                             />
                       
-                          <button className='ml-[15%] w-[70%] bg-red py-3 rounded-lg mt-5 font-bold'>SEND MESSAGE</button>
+                          <button type="submit" value="Send" className='ml-[15%] w-[70%] bg-red py-3 rounded-lg mt-5 font-bold'>SEND MESSAGE</button>
                       </form>
                   </div>
                  
