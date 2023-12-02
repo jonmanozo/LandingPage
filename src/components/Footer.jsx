@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom'
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Footer() {
   const form = useRef();
@@ -12,9 +13,10 @@ export default function Footer() {
     emailjs.sendForm('service_0ts5l2j', 'template_la3hhjv', form.current, 'iu_CXwVV7AzT83MBJ')
       .then((result) => {
           console.log(result.text);
-          console.log('Successfully Send');
+          toast.success("Message successfully send");
       }, (error) => {
-          console.log(error.text);
+          console.log('Message not send');
+          toast.error("Error : Message not send");
       });
   };
 
@@ -100,10 +102,10 @@ export default function Footer() {
                       <span className='text-[35px] text-red font-extrabold'></span>
                       <form  ref={form} onSubmit={sendEmail} className='mt-10'>
                          <label  className="block text-md font-bold mb-2 dark:text-white">Full Name</label>
-                         <input type="text"  name="from_name" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" />
+                         <input type="text"  name="from_name" className="w-[100%] h-10 rounded-md pl-3" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" />
                          
                          <label  className="block text-md font-bold mb-2 dark:text-white mt-5">Email</label>
-                         <input type="email"  name="sender_email" id="input-label-with-helper-text" className="w-[100%] h-10 rounded-md pl-3" placeholder="you@site.com" aria-describedby="hs-input-helper-text" />
+                         <input type="email"  name="sender_email"  className="w-[100%] h-10 rounded-md pl-3" placeholder="you@site.com" aria-describedby="hs-input-helper-text" />
                          
                          <label  className="block text-md font-bold dark:text-white  my-5">Message</label>
                          <textarea
@@ -123,6 +125,7 @@ export default function Footer() {
          
          <div className="flex w-[100%] h-[100px] pt-20 pb-10 items-center justify-center font-extrabold text-lg bg-black text-red">Copyright &copy;  2023 </div>
       </section>
+      <ToastContainer/>
     </>
   )
 }
