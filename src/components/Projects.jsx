@@ -42,31 +42,31 @@ export default function Projects() {
   return (
     <>
     
-      <section>
-        <div id="Projects" className="flex justify-center w-[100%] h-[100vh] bg-black">
+      <section className='flex py-20  max-notebook:py-5'>
+        <div id="Projects" className="flex justify-center w-[100%] h-[100%] bg-black">
 
-            <div className="flex justify-evenly items-center w-[80%]">
+            <div className="flex justify-evenly items-center w-[80%] max-minitab:flex-col max-minitab:mt-10">
                 <motion.div 
-                  className="flex w-[40%] h-[500px] rounded-xl bg-gray-500"
+                  className="flex w-[30%] rounded-xl max-notebook:w-[70%] "
                   initial={{opacity: 0, scale: 0.5}}
                   whileInView={{opacity: 1, scale: 1, x:10, y:10}}
                   whileHover={{rotate: 10}}
                   transition={{duration: 0.8}}
-                >
+                ><img src="/images/Easy1.jpg" alt="Image" className=''/>
 
                 </motion.div>
 
-                <div className="flex w-[50%] h-[500px]">
-                <motion.div className="flex flex-col justify-center w-100 text-gray-300 pl-10"
+                <div className="flex w-[50%] h-[500px] max-notebook:w-[100%]">  
+                <motion.div className="flex flex-col justify-center w-100 text-gray-300 pl-10 max-minitab:justify-normal"
                       variants={textVariant}
                       initial="initial"
                       whileInView="animate"
                     >
-                        <motion.div className='text-[60px] font-bold'  variants={textVariant}>EASYSHOP</motion.div>
-                        <motion.p className='mt-8 text-[20px]'  variants={textVariant}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum accusantium commodi 
+                        <motion.div className='text-[60px] font-bold max-notebook:text-[30px] max-minitab:mt-10 max-minitab:text-center'  variants={textVariant}>EASYSHOP</motion.div>
+                        <motion.p className='mt-8 text-[20px] max-notebook:text-[15px]'  variants={textVariant}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum accusantium commodi 
                           quod quasi fuga aliquam. Veniam eveniet quam sed, dolor error, voluptate non rem natus, 
                           repellat dolores fuga accusamus impedit!</motion.p>
-                        <motion.button className='w-[200px] py-2 mt-8 font-bold rounded-lg bg-red'  variants={textVariant}>See Demo</motion.button>
+                        <motion.button className='w-[200px] py-2 mt-8 font-bold rounded-lg bg-red max-minitab:m-auto '  variants={textVariant}>See Demo</motion.button>
                     </motion.div>
                 </div>
             </div>
@@ -75,8 +75,8 @@ export default function Projects() {
       </section>
 
 
-      <section>
-        <div id="Projects" className="flex justify-center w-[100%] h-[100vh] bg-black">
+      <section className='flex py-20'>
+        <div id="Projects" className="flex justify-center w-[100%]  h-[100%] bg-black ">
 
             <div className="flex justify-evenly items-center w-[80%]">
               
@@ -111,8 +111,8 @@ export default function Projects() {
       </section>
 
 
-      <section>
-        <div id="Projects" className="flex justify-center w-[100%] h-[100vh] bg-black">
+      <section className='flex py-20'>
+        <div id="Projects" className="flex justify-center w-[100%]  h-[100%] bg-black">
 
             <div className="flex justify-evenly items-center w-[80%]">
             <motion.div 

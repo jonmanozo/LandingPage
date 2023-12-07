@@ -3,8 +3,8 @@ import React from 'react'
 export default function CanDo() {
   return (
     <>
-    <section className=' bg-darkgray'>
-        <div id="CanDo" className="flex justify-center flex-col w-[100%] ">
+    <section className='flex py-20  bg-darkgray'>
+        <div id="CanDo" className="flex justify-center flex-col w-[100%] h-[100%] ">
           
         <h2 className='flex w-[100%] justify-center text-red font-bold text-[40px] mt-10 mb-10'>I CAN DO</h2>
           <div class="flex w-[100%]">

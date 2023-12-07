@@ -17,6 +17,31 @@ module.exports = {
         '5': '5',
         '8': '8',
       },
+      aspectRatio: {
+        '4/3': '4 / 3',
+        '2/4': '2 / 4',
+      },
+      screens: {
+      
+        'XSmobile': '100px',
+  
+        
+        'Smobile': '250px',
+  
+        'Mmobile': '385px',
+         
+        'Lmobile': '445px',
+  
+        'minitab' : '550px',
+  
+        'tablet': '640px',
+  
+        'notebook': '960px',
+  
+        'laptop': '1324px',
+  
+        'desktop': '1580px',
+      },
     },
   },
   plugins: [],
