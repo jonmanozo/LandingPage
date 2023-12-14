@@ -77,10 +77,10 @@ export default function YowIam() {
               animate="animate"
             >
                 <motion.div class="flex flex-col w-[100%] mt-[10vw] max-notebook:ml-10 " variants={textVariant}>
-                    <motion.div class="text-[2vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Yow! I am </span></motion.div>
+                    <motion.div class="text-[2vw] font-bold" variants={textVariant}><span>Yow! I am </span></motion.div>
                     <motion.div class="text-[4vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Aljon Mañozo</span></motion.div>
                     <motion.div class="text-[2.5vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span>FRONTEND <span className='text-gray-400'>DEVELOPER</span></span></motion.div>
-                    <motion.div className="pr-20" variants={textVariant}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugit quasi pariatur deleniti modi, 
+                    <motion.div className="pr-20 text-[1vw] max-laptop:text-[1.6vw]" variants={textVariant}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugit quasi pariatur deleniti modi, 
                     sit minima vitae neque ullam blanditiis, eligendi commodi explicabo fuga dolorem iste doloribus atque repellendus nisi.</motion.div>
                     <motion.div className="flex gap-10 mt-10">
                         <motion.button variants={textVariant} className=" border-4 text-gray-400 font-bold border-gray-400 w-[200px] rounded-md">DOWNLOAD MY CV</motion.button>
