@@ -15,6 +15,35 @@ const sliderVariant = {
   },
 };
 
+
+const HeroImageVariant = {
+  initial: {
+    x:0,
+    opacity: 0,
+  },
+  animate: {
+    rotate: 360,
+    opacity: 1,
+    transition:{
+      duration:2,
+    },
+  },
+};
+
+const HeroMainImageVariant = {
+  initial: {
+    x:0,
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition:{
+      duration:2,
+    },
+  },
+};
+
+
 const textVariant = {
     initial: {
       x:500,
@@ -41,30 +70,40 @@ export default function YowIam() {
         <div id="Iam" className="flex justify-center w-[100%] h-[100%]  bg-black pt-14 max-notebook:pt-5">
         <div   className="flex w-[80%] h-[100%] max-laptop:w-[90%]">
 
-            <motion.div className="flex w-[50%] h-[55vw]  min-w-[100px] z-1 max-laptop:w-[45%]"><img src="/images/intro.png" alt="Image" className=''/></motion.div>
-            <motion.div className="flex  w-[45%] text-white max-laptop:w-[55%] "
+           
+            <motion.div className="flex  w-[50%] text-white max-laptop:w-[55%]"
               variants={textVariant}
               initial="initial"
               animate="animate"
             >
-                <motion.div class="flex flex-col w-[100%] mt-[10vw] ml-20 max-notebook:ml-10 " variants={textVariant}>
-                    <motion.div class="text-[5vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>YOW!</span></motion.div>
-                    <motion.div class="text-[5vw] font-bold max-laptop:text-[4vw] max-laptop:-mt-2 -mt-6 " variants={textVariant}>I AM  ALJON</motion.div>
-                    <motion.div class="text-[5vw] font-bold max-laptop:text-[4vw] max-laptop:-mt-2 -mt-6 text-gray-500" variants={textVariant}><strong className='text-red text-[4vw] animate-pulse -z-2'>FULL STACK</strong></motion.div>
-                    <motion.div class="text-[2vw] font-bold max-laptop:text-[1vw] max-laptop:-mt-2 -mt-6  text-gray-500" variants={textVariant}><strong className='text-gray-500 text-[3vw] animate-pulse -z-2'>WEB DEVELOPER</strong></motion.div>
+                <motion.div class="flex flex-col w-[100%] mt-[10vw] max-notebook:ml-10 " variants={textVariant}>
+                    <motion.div class="text-[2vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Yow! I am </span></motion.div>
+                    <motion.div class="text-[4vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Aljon Mañozo</span></motion.div>
+                    <motion.div class="text-[2.5vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span>FRONTEND <span className='text-gray-400'>DEVELOPER</span></span></motion.div>
+                    <motion.div className="pr-20" variants={textVariant}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugit quasi pariatur deleniti modi, 
+                    sit minima vitae neque ullam blanditiis, eligendi commodi explicabo fuga dolorem iste doloribus atque repellendus nisi.</motion.div>
+                    <motion.div className="flex gap-10 mt-10">
+                        <motion.button variants={textVariant} className=" border-4 text-gray-400 font-bold border-gray-400 w-[200px] rounded-md">DOWNLOAD MY CV</motion.button>
+                        <motion.button variants={textVariant} className="bg-red font-extrabold text-black w-[200px] py-2 rounded-md">HIRE ME</motion.button>
+                       
+
+                    </motion.div>
                 </motion.div>
-            </motion.div>
-            
+                   
   
-        </div>    
+            </motion.div>
+            <motion.div variants={HeroImageVariant}  className="flex w-[50%] mt-[-50px]  min-w-[100px] z-1 max-laptop:w-[45%]">
+              
+            <motion.img   src="/images/heromainimage.png" alt="Image" className='z-1'/>
+            <motion.img variants={HeroImageVariant}  initial="initial"
+              animate="animate"  src="/images/heroimageback.png" alt="Image" className='ml-[-100%]'/>
+            </motion.div>
+         
+        </div>  
+
         
       </div>  
       </section>  
-      <motion.div className="flex  text-[13vw] font-bold mt-[-20vw] whitespace-nowrap z-0 text-gray-500 text-opacity-5 "  
-            variants={sliderVariant}
-            initial="initial"
-            animate="animate">
-              Creative Fullstack / FrontEnd</motion.div>    
     
     </> 
     
