@@ -58,7 +58,7 @@ export default function Projects() {
 
                 <div className="flex w-[50%] h-[500px] max-notebook:w-[100%]">  
                 <motion.div className="flex flex-col justify-center w-100 text-gray-300 pl-10 max-minitab:justify-normal"
-                      variants={textVariant}
+                      variants={textVariant2}
                       initial="initial"
                       whileInView="animate"
                     >
@@ -75,7 +75,7 @@ export default function Projects() {
       </section>
 
 
-      <section className='flex py-20'>
+      {/* <section className='flex py-20'>
         <div id="Projects" className="flex justify-center w-[100%]  h-[100%] bg-black ">
 
             <div className="flex justify-evenly items-center w-[80%]">
@@ -127,7 +127,7 @@ export default function Projects() {
 
                 <div className="flex w-[50%] h-[500px]">
                 <motion.div className="flex flex-col justify-center w-100 text-gray-300 pl-10"
-                      variants={textVariant}
+                      variants={textVariant2}
                       initial="initial"
                       whileInView="animate"
                     >
@@ -141,7 +141,7 @@ export default function Projects() {
             </div>
 
         </div>
-      </section>
+      </section> */}
 
 
     </>

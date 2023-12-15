@@ -19,11 +19,29 @@ const sliderVariant = {
 const HeroImageVariant = {
   initial: {
     x:0,
+    scale: 0.5,
     opacity: 0,
   },
   animate: {
+    x:0,
     rotate: 360,
+    scale:1,
     opacity: 1,
+    transition:{
+      duration:3.2,
+      repeatDelay: 20,
+    },
+  },
+};
+
+const HeroImageFloaterVariant = {
+  initial: {
+    y:180,
+    opacity:0,
+  },
+  animate: {
+    y:0,
+    opacity:1,
     transition:{
       duration:2,
     },
@@ -32,7 +50,6 @@ const HeroImageVariant = {
 
 const HeroMainImageVariant = {
   initial: {
-    x:0,
     opacity: 0,
   },
   animate: {
@@ -46,7 +63,7 @@ const HeroMainImageVariant = {
 
 const textVariant = {
     initial: {
-      x:500,
+      x:-300,
       opacity: 0,
     },
     animate: {
@@ -92,10 +109,11 @@ export default function YowIam() {
                    
   
             </motion.div>
-            <motion.div variants={HeroImageVariant}  className="flex w-[50%] mt-[-50px]  min-w-[100px] z-1 max-laptop:w-[45%]">
+            <motion.div variants={HeroImageFloaterVariant}    initial="initial"
+              animate="animate"  className="flex w-[50%] mt-[-50px]  min-w-[100px] z-1 max-laptop:w-[45%]">
               
             <motion.img   src="/images/heromainimage.png" alt="Image" className='z-1'/>
-            <motion.img variants={HeroImageVariant}  initial="initial"
+            <motion.img variants={HeroImageVariant}   initial="initial"
               animate="animate"  src="/images/heroimageback.png" alt="Image" className='ml-[-100%]'/>
             </motion.div>
          
