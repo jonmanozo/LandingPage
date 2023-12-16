@@ -3,7 +3,7 @@ import React from 'react'
 export default function CanDo() {
   return (
     <>
-    <section className='flex py-20  bg-darkgray'>
+    <section className='flex py-20  bg-black'>
         <div id="CanDo" className="flex justify-center flex-col w-[100%] h-[100%] ">
           
         <h2 className='flex w-[100%] justify-center text-red font-bold text-[40px] mt-10 mb-10'>I CAN DO</h2>

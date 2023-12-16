@@ -29,7 +29,7 @@ const textVariant = {
               initial="initial"
               animate="animate" className="flex w-[80%] text-white">
 
-                <motion.div  variants={textVariant} className="w-[50%] flex  text-[30px] font-bold  max-notebook:text-[20px]"><h1  className='text-red'>ALJON</h1></motion.div>
+                <motion.div  variants={textVariant} className="w-[50%] flex  text-[30px] font-bold  max-notebook:text-[20px]"><h1  className='text-red'>ALJON MAÑOZO</h1></motion.div>
                 <motion.div variants={textVariant} className='flex w-[50%] max-notebook:hidden'>
                   <motion.div variants={textVariant} className="w-[25%] flex items-center justify-center font-bold "><a href="#Iam" className='NavLinkhover'>WHO AM I</a></motion.div>
                   <motion.div variants={textVariant} className="w-[25%] flex items-center justify-center font-bold "><a href="#Projects"  className='NavLinkhover'>PROJECTS</a></motion.div>
