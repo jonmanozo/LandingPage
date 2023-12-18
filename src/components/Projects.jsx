@@ -51,6 +51,7 @@ export default function Projects() {
                   initial={{opacity: 0, scale: 0.5}}
                   whileInView={{opacity: 1, scale: 1, x:10, y:10}}
                   transition={{duration: 0.8}}
+                  whileHover={{rotate:5}}
                 ><img src="/images/Easy1.jpg" alt="Image" className='w-[100%] bg-[#363539] rounded-xl pt-7 px-2 pb-2'/>
 
                 </motion.div>
@@ -97,6 +98,8 @@ export default function Projects() {
                   initial={{opacity: 0, scale: 0.5}}
                   whileInView={{opacity: 1, scale: 1, x:10, y:10}}
                   transition={{duration: 0.8}}
+                  whileHover={{rotate:5}}
+                  
                 ><img src="/images/Easy1.jpg" alt="Image" className='w-[100%] bg-[#363539] rounded-xl pt-7 px-2 pb-2'/>
 
                 </motion.div>
@@ -115,6 +118,7 @@ export default function Projects() {
                   initial={{opacity: 0, scale: 0.5}}
                   whileInView={{opacity: 1, scale: 1, x:10, y:10}}
                   transition={{duration: 0.8}}
+                  whileHover={{rotate:5}}
                 ><img src="/images/Easy1.jpg" alt="Image" className='w-[100%] bg-[#363539] rounded-xl pt-7 px-2 pb-2'/>
 
                 </motion.div>

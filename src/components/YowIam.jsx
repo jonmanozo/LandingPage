@@ -93,12 +93,13 @@ export default function YowIam() {
               initial="initial"
               animate="animate"
             >
-                <motion.div class="flex flex-col w-[100%] pl-20 mt-[10vw] max-notebook:ml-10 " variants={textVariant}>
+                <motion.div class="flex flex-col w-[100%] pl-20 mt-[12vw] max-notebook:ml-10 " variants={textVariant}>
                     <motion.div class="text-[2vw] font-bold" variants={textVariant}><span>Yow! I am </span></motion.div>
                     <motion.div class="text-[4vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Aljon Mañozo</span></motion.div>
-                    <motion.div class="text-[2.5vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span>FRONTEND <span className='text-gray-400'>DEVELOPER</span></span></motion.div>
-                    <motion.div className="pr-20 text-[1vw] max-laptop:text-[1.6vw]" variants={textVariant}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem fugit quasi pariatur deleniti modi, 
-                    sit minima vitae neque ullam blanditiis, eligendi commodi explicabo fuga dolorem iste doloribus atque repellendus nisi.</motion.div>
+                    <motion.div class="text-[2vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span className='text-[2.5vw]'>FRONTEND / REACT</span> <span className='text-gray-400'>DEVELOPER</span></motion.div>
+                    <motion.div className="pr-20 text-[1vw] max-laptop:text-[1.6vw]" variants={textVariant}>
+                      {/* <p>A Creative Frontend Developer that knowledgeable in backend process</p> */}
+                    </motion.div>
                     <motion.div className="flex gap-10 mt-10">
                         <motion.button variants={textVariant} className="bg-red font-extrabold text-black w-[200px] py-2 rounded-md">DOWNLOAD MY CV</motion.button>
                        

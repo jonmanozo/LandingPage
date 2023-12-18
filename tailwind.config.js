@@ -10,6 +10,7 @@ module.exports = {
         'black': '#0F0F0F',
         'backgray': ' rgb(38,38,38)',
         'darkgray': '#202020',
+        'brown': '#363539',
       },
       zIndex: {
         '1': '1',
