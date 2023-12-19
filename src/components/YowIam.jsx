@@ -96,7 +96,8 @@ export default function YowIam() {
                 <motion.div class="flex flex-col w-[100%] pl-20 mt-[12vw] max-notebook:ml-10 " variants={textVariant}>
                     <motion.div class="text-[2vw] font-bold" variants={textVariant}><span>Yow! I am </span></motion.div>
                     <motion.div class="text-[4vw] font-bold max-laptop:text-[4vw]" variants={textVariant}><span>Aljon Mañozo</span></motion.div>
-                    <motion.div class="text-[2vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span className='text-[2.5vw]'>FRONTEND / REACT</span> <span className='text-gray-400'>DEVELOPER</span></motion.div>
+                    <motion.div class="text-[2vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold animate-bounce" variants={textVariant}><span className='text-[2.5vw] '>FRONTEND / REACT</span> </motion.div>
+                    <motion.div class="text-[2vw] mb-4 max-laptop:text-[3vw] text-red  font-extrabold " variants={textVariant}><span className='text-gray-400'>DEVELOPER</span></motion.div>
                     <motion.div className="pr-20 text-[1vw] max-laptop:text-[1.6vw]" variants={textVariant}>
                       {/* <p>A Creative Frontend Developer that knowledgeable in backend process</p> */}
                     </motion.div>
@@ -113,8 +114,13 @@ export default function YowIam() {
               animate="animate"  className="flex w-[50%] mt-[-50px]  min-w-[100px] z-1 max-laptop:w-[45%]">
               
             <motion.img   src="/images/heromainimage.png" alt="Image" className='z-1'/>
-            <motion.img variants={HeroImageVariant}   initial="initial"
-              animate="animate"  src="/images/heroimageback.png" alt="Image" className='ml-[-100%]'/>
+            <motion.img 
+              variants={HeroImageVariant}   
+              initial="initial"
+              animate="animate"  
+              
+              
+              src="/images/heroimageback.png" alt="Image" className='ImageBack ml-[-100%]'/>
             </motion.div>
          
         </div>  

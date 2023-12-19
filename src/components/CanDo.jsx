@@ -56,9 +56,9 @@ export default function CanDo() {
 
   return (
     <>
-    <section className='flex flex-col pt-[100px] mb-[100px] '>
+    <section className='flex flex-col pt-[100px] mb-[120px] '>
 
-        <motion.div id="CanDo" className="flex  justify-evenly w-[100%] h-100 py-4 -skew-y-3 bg-brown mb-10"
+        <motion.div id="CanDo" className="flex  justify-evenly self-center w-[82%] rounded-lg h-100 py-4  bg-brown hover:bg-red "
           variants={opacitybackground}
           initial='initial'
           whileInView='animate'
@@ -174,6 +174,16 @@ export default function CanDo() {
               </svg>
             </motion.div>
 
+            
+
+
+            <motion.div className="w-20 h-20" variants={iconlogo}>   
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+            </svg>
+            </motion.div>
+
+
             <motion.div className="w-20 h-20" variants={iconlogo}>
               <svg className='hover:scale-150' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000">
                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -189,66 +199,75 @@ export default function CanDo() {
                 </g>
               </svg>
             </motion.div>
-            </motion.div>
+
+
+
+
+  </motion.div>
 
            
         </motion.div>
 
-        <motion.div className="flex bg-brown w-100 -skew-y-3  text-gray-200"
+        <motion.div className="flex  w-100  text-gray-200"
           variants={opacitybackground}
           initial='initial'
           whileInView='animate'
         >
           
-        <motion.div className="flex flex-wrap justify-center items-center gap-10 w-[100%] p-20  text-gray-200"
+        <motion.div className="flex flex-wrap justify-center  gap-10 w-[100%] p-10  text-gray-400 font-bold"
           variants={cardbox}
           initial='initial'
           whileInView='animate'
         >
           
-            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-black rounded-lg justify-center text-center p-5"
+            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-brown rounded-lg text-center p-5  hover:bg-red "
               variants={cardbox}
+              whileHover={{scale:1.1}}
             >
-              <motion.h2 className='text-red font-bold text-[1.8rem] mb-5' variants={cardbox}>FRONTEND</motion.h2>
-              <motion.p className='' variants={cardbox}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis earum 
-              eius reprehenderit tenetur culpa delectus modi molestiae fugiat autem, ad quam animi saepe sequi in recusandae 
+              <motion.h2 className='text-black  font-extrabold text-[1.8rem] mb-5' variants={cardbox}>FRONTEND DEVELOPMENT</motion.h2>
+              <motion.p className='' variants={cardbox}>Can collaborate with backend developers to integrate frontend components with server-side logic and databases.
+               This may involve working with APIs to fetch and display data dynamically.</motion.p>
+            </motion.div>
+
+                    
+            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-brown rounded-lg  text-center p-5  hover:bg-red "
+              variants={cardbox}
+              whileHover={{scale:1.1}}
+            >
+              <motion.h2 className='text-black  font-extrabold text-[1.8rem]  mb-5' variants={cardbox}>WEB DESIGNING</motion.h2>
+              <motion.p className='' variants={cardbox}>Implement the process of planning, conceptualizing, and creating the visual elements of a website. 
+              Including graphic design, user interface (UI) and user experience (UX) design.
+              </motion.p>
+            </motion.div>
+
+                    
+            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-brown rounded-lg  text-center p-5  hover:bg-red "
+              variants={cardbox}
+              whileHover={{scale:1.1}}
+            >
+              <motion.h2 className='text-black  font-extrabold text-[1.8rem]  mb-5' variants={cardbox}>FRAMEWORK / LIBRARIES</motion.h2>
+              <motion.p className='' variants={cardbox}>Able to use framework and libraries like REACTJS, BOOSTRAP, TAILWIND, FRAMER MOTION and others, that 
+              offers several advantages that contribute to efficient and effective web development
               illum placeat rem.</motion.p>
             </motion.div>
 
-           
-            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-black rounded-lg justify-center text-center p-5"
+                    
+            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-brown rounded-lg  text-center p-5  hover:bg-red "
               variants={cardbox}
+              whileHover={{scale:1.1}}
             >
-              <motion.h2 className='text-red font-bold text-[1.8rem]  mb-5' variants={cardbox}>WEB DESIGN</motion.h2>
-              <motion.p className='' variants={cardbox}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis earum 
-              eius reprehenderit tenetur culpa delectus modi molestiae fugiat autem, ad quam animi saepe sequi in recusandae 
-              illum placeat rem.</motion.p>
-            </motion.div>
-
-           
-            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-black rounded-lg justify-center text-center p-5"
-              variants={cardbox}
-            >
-              <motion.h2 className='text-red font-bold text-[1.8rem]  mb-5' variants={cardbox}>GRAPHIC DESIGN</motion.h2>
-              <motion.p className='' variants={cardbox}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis earum 
-              eius reprehenderit tenetur culpa delectus modi molestiae fugiat autem, ad quam animi saepe sequi in recusandae 
-              illum placeat rem.</motion.p>
-            </motion.div>
-
-           
-            <motion.div className="flex flex-col w-[300px] min-h-[350px] bg-black rounded-lg justify-center text-center p-5"
-              variants={cardbox}
-            >
-              <motion.h2 className='text-red font-bold text-[1.8rem]  mb-5' variants={cardbox}>API INTEGRATION</motion.h2>
-              <motion.p className='' variants={cardbox}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam perspiciatis earum 
-              eius reprehenderit tenetur culpa delectus modi molestiae fugiat autem, ad quam animi saepe sequi in recusandae 
-              illum placeat rem.</motion.p>
+              <motion.h2 className='text-black  font-extrabold text-[1.8rem]  mb-5' variants={cardbox}>API INTEGRATION</motion.h2>
+              <motion.p className='' variants={cardbox}> Connect and interact with various services, data sources, and functionalities by 
+              making requests to external APIs (Application Programming Interfaces) to retrieve data and incorporate it into your web application's user interface.  </motion.p>
             </motion.div>
 
            
 
+         </motion.div>
         </motion.div>
-        </motion.div>
+
+
+        
       </section>
     </>
   )

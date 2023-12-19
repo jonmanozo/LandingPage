@@ -25,8 +25,8 @@ export default function Footer() {
 
   return (
     <>
-     <section className='flex flex-col h-[700px] bg-black'>
-         <div id="Contact" className="flex justify-center w-[100%] h-[700px]">
+     <section className='flex flex-col h-[700px] mt-[160px] bg-black '>
+         <div id="Contact" className="flex justify-center w-[100%]  h-[700px]">
                 <div className="flex justify-evenly  w-[90%] h-[500px] mt-20"> 
                   <div className="flex w-[40%] flex-col text-xl text-white">
                     <span className='text-[35px] text-red font-extrabold mb-10 '>LET'S TALK</span>
@@ -100,19 +100,20 @@ export default function Footer() {
                       <span className='text-[35px] text-red font-extrabold'></span>
                       <form  ref={form} onSubmit={sendEmail} className='mt-10'>
                          <label  className="block text-md font-bold mb-2 dark:text-white">Full Name</label>
-                         <input type="text"  name="from_name" className="w-[100%] h-10 rounded-md pl-3" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" required />
+                         <input type="text"  name="from_name" className="w-[100%] h-10 rounded-md pl-3 bg-brown text-white" placeholder="Enter Full Name" aria-describedby="hs-input-helper-text" required />
                          
                          <label  className="block text-md font-bold mb-2 dark:text-white mt-5" >Email</label>
-                         <input type="email"  name="sender_email"  className="w-[100%] h-10 rounded-md pl-3" placeholder="your@email.com" aria-describedby="hs-input-helper-text" required />
+                         <input type="email"  name="sender_email"  className="w-[100%] h-10 rounded-md pl-3 bg-brown  text-white placeholder-gray-400" placeholder="your@email.com" aria-describedby="hs-input-helper-text" required />
                          
                          <label  className="block text-md font-bold dark:text-white  my-5">Message</label>
                          <textarea
                                 id="message"
                                 name="message"
                                 rows={3}
-                                className=" shadow-md p-2 pl-3 h-[150px] w-[100%] border-gray-300 bg-gray-100 rounded block border-0 py-1.5 text-gray-900 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className=" shadow-md p-2 pl-3 h-[150px] w-[100%] border-gray-300  rounded block border-0 py-1.5 bg-brown text-white placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                 defaultValue={''}
-                                required />
+                                required
+                                placeholder='Message Here' />
                       
                           <button type="submit" value="Send" className='ml-[15%] w-[70%] bg-red py-3 rounded-lg mt-5 font-bold'>SEND MESSAGE</button>
                       </form>

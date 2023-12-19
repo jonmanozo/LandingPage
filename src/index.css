@@ -19,9 +19,14 @@
   
   html{
     scroll-behavior: smooth;
+    
+    
+    scroll-snap-type: y mandatory;
     overflow-x: hidden;
   }
   section {
+    
+    scroll-snap-type: y mandatory;
     scroll-snap-align: center;
   }
 
@@ -42,7 +47,6 @@
   .hover-rotate:hover img {
     transform: scale(1.2) rotate(360deg);
   }
-
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
