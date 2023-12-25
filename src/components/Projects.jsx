@@ -65,7 +65,7 @@ export default function Projects() {
                     >
                         <motion.div className='text-[60px] font-bold text-red max-notebook:text-[30px] max-minitab:mt-10 max-minitab:text-center'  variants={textVariant}>EASYSHOP</motion.div>
                         <motion.p className='mt-2 text-[18px] max-notebook:text-[15px]'  variants={textVariant}>Easyshop Ecommerce Website is a Kodego Bootcamp Capstone group project. This project was built with Separate Frontend and Backend.   </motion.p>
-                        <motion.p className='mt-8 text-[18px] max-notebook:text-[15px] font-bold text-red'  variants={textVariant}>MY CONTRIBUTION IN THE PROJECT   </motion.p>
+                        <motion.p className='mt-8 text-[18px] max-notebook:text-[15px] font-bold text-red'  variants={textVariant}>MY CONTRIBUTION IN THIS PROJECT   </motion.p>
                         <motion.p className='mt-2 text-[18px] max-notebook:text-[15px]'  variants={textVariant}>Provided the Frontend development of the website. Responsible in creating UI and UX design including website responsiveness. </motion.p>
                         
                         
